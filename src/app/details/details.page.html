@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+ <ion-card>
+    <ion-card-header>
+         <ion-card-title>{{infoUser.name}}</ion-card-title>
+         <ion-img [src]="infoUser.avatar_url"></ion-img>
+    </ion-card-header>
+  
+    <ion-card-content >
+      {{infoUser.bio}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

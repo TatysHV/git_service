@@ -1,14 +1,19 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      GitHub API
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <ion-item>
+    <ion-label position="floating">Username</ion-label>
+    <ion-input expand="block" [(ngModel)]='user'></ion-input>
+  </ion-item>
+  <br><br>
+  <ion-button expand="block" (click)='getData()'>Search user</ion-button>
+  <br><br>
+ 
+  
 </ion-content>
